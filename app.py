@@ -11,7 +11,7 @@ st.sidebar.markdown("Dataset: [Kaggle Titanic](https://www.kaggle.com/competitio
 st.sidebar.markdown("Author: Reisha Narindra Whibangga")
 
 # Header
-st.title("Titanic Survival Prediction App")
+st.title("Titanic Prediksi Kelangsungan Hidup")
 
 # View Dataset
 st.subheader("Dataset Overview")
@@ -19,11 +19,11 @@ data = pd.read_csv('data/train.csv')
 st.write(data.head())
 
 # Visualization
-st.subheader("Visualizations")
+st.subheader("Visualisasi")
 st.bar_chart(data['Survived'].value_counts())
 
 # Prediction Form
-st.subheader("Make a Prediction")
+st.subheader("Prediksi")
 Pclass = st.selectbox("Passenger Class", [1, 2, 3])
 Sex = st.selectbox("Sex", ["Male", "Female"])
 Age = st.slider("Age", 0, 80, 25)
